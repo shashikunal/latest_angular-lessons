@@ -1,0 +1,27 @@
+<h1>List of Employees</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>emp_id</th>
+      <th>emp name</th>
+      <th>emp designation</th>
+      <th>emp salary</th>
+      <th>emp gender</th>
+      <th>emp exp</th>
+      <th>emp edu</th>
+    </tr>
+  </thead>
+
+  <tbody *ngFor="let emp of employeesObject">
+    <tr>
+      <td>{{ emp.emp_id }}</td>
+      <td>{{ emp.emp_name | uppercase }}</td>
+      <td>{{ emp.emp_salary | currency : "INR" }}</td>
+      <td>{{ emp.emp_designation }}</td>
+      <td>{{ emp.emp_gender }}</td>
+      <td>{{ emp.emp_exp }}</td>
+      <td>{{ emp.emp_edu }}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,15 @@
+#navbarBlock {
+  background-color: rgb(55, 24, 84);
+  height: 70px;
+  width: 100%;
+}
+
+#navbarBlock article {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  color: #fff;
+}
